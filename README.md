@@ -12,3 +12,11 @@
 For implementation details check [the report](Assignment%202%20-%20Report.pdf).
 
 ## Demo
+
+
+https://github.com/luismrguimaraes/Digital-Polyphonic-Synth/assets/100025288/26e22cfb-ec58-411f-9ef4-27c5c968d6a5
+
+
+
+https://github.com/luismrguimaraes/Digital-Polyphonic-Synth/assets/100025288/6ee730b8-e86f-455d-adb3-691c72169544
+
