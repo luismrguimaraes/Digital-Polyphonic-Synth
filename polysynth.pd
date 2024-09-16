@@ -1,11 +1,11 @@
-#N struct 7320-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
-#N struct 7333-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
-#N struct 7346-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
-#N canvas 0 37 1470 891 12;
+#N struct 1004-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
+#N struct 1017-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
+#N struct 1030-point float x0 float y0 float xs float ys float fg float in float gridx float gridy;
+#N canvas 10 37 1470 891 12;
 #X declare -path ./abstractions;
 #X text 155 53 MIDI input;
-#X obj 79 222 else/slider2d 127 127 -1 1 -1 1 0 210 210 210 0 0 0 1 0 0 -1 -0.212598 empty empty;
-#X obj 811 234 else/slider2d 127 127 -1 1 -1 1 0 210 210 210 0 0 0 1 0 0 1 -0.370079 empty empty;
+#X obj 79 222 else/slider2d 127 127 -1 1 -1 1 0 210 210 210 0 0 0 1 0 0 -1 -0.11811 empty empty;
+#X obj 811 234 else/slider2d 127 127 -1 1 -1 1 0 210 210 210 0 0 0 1 0 0 0.574803 -0.385827 empty empty;
 #X obj 1519 220 else/slider2d 127 127 -1 1 -1 1 0 210 210 210 0 0 0 1 0 0 0.913386 -0.708661 empty empty;
 #X obj 860 1392 oscope~ 284 184 32 3 128 -1 1 0 0 0 0 30 30 30 190 190 190 160 160 160 0 empty;
 #X obj 867 413 * 2;
@@ -22,7 +22,7 @@
 #X obj 309 220 tgl 19 0 empty empty RM 0 -10 0 15 #faff00 #000000 #000000 0 1;
 #X obj 253 299 knob 40 0.1 1000 1 0.1 empty empty #faff00 #7c7c7c black 0 0 0 0 1 320 0 0 0.1;
 #X text 257 277 FM d;
-#X obj 401 241 hradio 25 1 0 5 empty empty OSC1\ OSC2\ OSC3\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
+#X obj 401 241 hradio 25 1 0 5 empty empty NONE\ OSC2\ OSC3\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
 #X text 428 189 Mod Source;
 #X text 2 265 Waveform;
 #X text 737 284 Waveform;
@@ -30,7 +30,7 @@
 #X obj 1034 234 tgl 19 0 empty empty RM 0 -10 0 15 #faff00 #000000 #000000 0 1;
 #X obj 969 320 knob 40 0 1000 0 0 empty empty #faff00 #7c7c7c black 0 0 0 0 1 320 0 0 0;
 #X text 974 293 FM d;
-#X obj 1128 244 hradio 25 1 0 5 empty empty OSC1\ OSC2\ OSC3\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
+#X obj 1128 244 hradio 25 1 0 5 empty empty OSC1\ NONE\ OSC3\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
 #X text 1155 192 Mod Source;
 #X obj 1120 286 expr if($i1 == 1 \, -1 \, $i1);
 #X text 595 291 Exclude Self;
@@ -40,7 +40,7 @@
 #X obj 1734 225 tgl 19 0 empty empty RM 0 -10 0 15 #faff00 #000000 #000000 0 1;
 #X obj 1682 314 knob 40 0 1000 0 0 empty empty #faff00 #7c7c7c black 0 0 0 0 1 320 0 0 0;
 #X text 1687 287 FM d;
-#X obj 1828 235 hradio 25 1 0 5 empty empty OSC1\ OSC2\ OSC3\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
+#X obj 1828 235 hradio 25 1 0 5 empty empty OSC1\ OSC2\ NONE\ LFO1\ LFO2 -20 -10 0 12 #faff00 #000000 #000000 0;
 #X text 1855 183 Mod Source;
 #X text 2012 284 Exclude Self;
 #X obj 1820 284 expr if($i1 == 2 \, -1 \, $i1);
@@ -77,7 +77,7 @@
 #X connect 12 0 6 0;
 #X connect 12 0 4 1;
 #X restore 638 1344 pd reverb;
-#X obj 822 1275 hsl 162 19 1 0 0 1 empty empty Dry/Wet -2 -10 0 12 #ffe3c6 #000000 #000000 4100 1;
+#X obj 822 1275 hsl 162 19 1 0 0 1 empty empty Dry/Wet -2 -10 0 12 #ffe3c6 #000000 #000000 16100 1;
 #X text 1439 257 Waveform;
 #N canvas 0 37 1470 891 fft-spectralGate 0;
 #X obj 52 104 *~;
