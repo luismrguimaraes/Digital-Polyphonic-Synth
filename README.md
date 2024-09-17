@@ -11,7 +11,9 @@
 ## How to run
 Clone or download this repository and run `polysynth.pd`. It also runs on [plugdata](https://plugdata.org/), so it can be loaded into its supported DAWs.
 
-**IMPORTANT:** Currently, the patch states **do not save**, so please record your audio before closing your current session. Also, please **use a limiter** or be very careful setting the mod sources because loud feedback may happen.
+**IMPORTANT:** Currently, the patch states **do not save**, so make sure to record your audio before closing your current session. Also, make sure to **use a limiter** or be very careful setting the mod sources because loud feedback may happen.
+
+Note: This project is not very adequate for real-time usage as the patch has too much delay.
 
 ## Implementation
 For implementation details check [the report](Assignment%202%20-%20Report.pdf).
