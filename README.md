@@ -21,4 +21,6 @@ For implementation details check [the report](Assignment%202%20-%20Report.pdf).
 ## Demo
 Full demo [on YouTube](https://www.youtube.com/watch?v=eSdJ8ZwYfUs) and short demo below:
 
-https://github.com/user-attachments/assets/5ed3098d-4667-409f-b4ad-8af479566877
+https://github.com/user-attachments/assets/13c59504-d852-443c-b0ec-39d8e99a0fed
+
+
