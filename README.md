@@ -13,7 +13,7 @@ Clone or download this repository and run `polysynth.pd`. It also runs on [plugd
 
 **IMPORTANT:** Currently, the patch state **isn't saved**, so make sure to record your audio before closing your current session.
 
-Note: This project is not very adequate for real-time usage as the patch has too much delay. Tested on Pd 0.54-0 and plugdata 0.9.1.
+Note: If you need lower latency, remove the [fft-spectralGate] effect object. Tested on Pd 0.54-0 and plugdata 0.9.1.
 
 ## Implementation
 For implementation details check [the report](Assignment%202%20-%20Report.pdf).
