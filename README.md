@@ -9,7 +9,7 @@
 - An effects section which includes spectral gating and reverb.
 
 ## External libraries required
-- Else
+- [Else](https://github.com/porres/pd-else)
 
 ## How to run
 Clone or download this repository and run `polysynth.pd`. It also runs on [plugdata](https://plugdata.org/), so it can be loaded into its supported DAWs.
