@@ -8,6 +8,9 @@
 - FM and RM modulation (processed sequentially: FM → RM) for each oscillator;
 - An effects section which includes spectral gating and reverb.
 
+## External libraries required
+- Else
+
 ## How to run
 Clone or download this repository and run `polysynth.pd`. It also runs on [plugdata](https://plugdata.org/), so it can be loaded into its supported DAWs.
 
